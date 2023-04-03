@@ -1,0 +1,34 @@
+
+### Get all turmas - retorna todas as turmas
+GET http://localhost:3003/all_turma
+
+
+### Get all estudantes - retorna todas os estudantes
+GET http://localhost:3003/all_estudantes
+
+
+### Get all docentes - retorna todas os docentes
+GET http://localhost:3003/all_docente
+
+###
+POST http://localhost:3003/create_estudantes
+Content-Type: application/json
+
+{
+    "nome":"Ana",
+    "email":"Ana@gmail.com",
+    "data_nasc": "1999-01-08",
+    "turma_id":"1",
+    "hobbies":["Construir", "corre"]
+}
+###
+POST http://localhost:3003/create_docente
+Content-Type: application/json
+
+{
+    "id":"17",
+    "nome":"Thiago Profe",
+    "email":"Thprof@gmail.com",
+    "data_nasc":"1999-11-18",
+    "turma_id":"1"
+}
